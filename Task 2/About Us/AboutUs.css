@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f5f0e8;
+    color: #333;
+}
+
+header {
+    background-color: #c65d3b;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+section {
+    background-color: white;
+    width: 80%;
+    margin: 25px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #c65d3b;
+    text-align: center;
+}
+
+h3 {
+    color: #a8482d;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+}
+
+.info-box {
+    background-color: #fff0e6;
+    width: 27%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.mission-box {
+    background-color: #fff0e6;
+    width: 27%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.number {
+    color: #c65d3b;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+ul {
+    line-height: 2;
+}
+
+.team-member {
+    background-color: #fff0e6;
+    width: 27%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.profile-circle {
+    background-color: #c65d3b;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.role {
+    color: #c65d3b;
+}
+
+#contact {
+    text-align: center;
+}
+
+.contact-box {
+    background-color: #fff0e6;
+    padding: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,103 @@
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #eef2ff;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #4a4859, #2b292d);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #25204a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #b9a7ff;
+        }
+
+        section {
+            background-color: white;
+            margin: 25px auto;
+            padding: 25px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #6a5acd;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #444;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        ul {
+            line-height: 2;
+        }
+
+        li::marker {
+            color: #6a5acd;
+        }
+
+        .project {
+            background-color: #f4f1ff;
+            padding: 18px;
+            margin: 15px 0;
+            border-left: 5px solid #6a5acd;
+            border-radius: 5px;
+        }
+
+        .project:hover {
+            background-color: #e9e4ff;
+        }
+
+        .contact a {
+            color: #6a5acd;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #25204a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+    
