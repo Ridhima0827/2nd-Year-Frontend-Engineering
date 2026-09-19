@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+
+
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: 35px auto;
+}
+
+
+
+
+.product {
+    background-color: white;
+
+    display: flex;
+    gap: 40px;
+
+    padding: 30px;
+    margin-bottom: 25px;
+
+    border: 1px solid #ccc;
+}
+
+
+
+
+.phone-image {
+    width: 40%;
+
+    text-align: center;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.phone-image img {
+    width: 200px;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+
+
+
+.product-info {
+    flex: 1;
+}
+
+.company {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product-info h1 {
+    margin: 5px 0 10px;
+    font-size: 32px;
+}
+
+.rating {
+    color: #666;
+    font-size: 14px;
+}
+
+.description {
+    line-height: 1.6;
+    color: #555;
+}
+
+.price {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    font-size: 28px;
+}
+
+.old-price {
+    display: inline-block;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.offer {
+    color: green;
+    font-weight: bold;
+}
+
+
+
+
+.information {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+    padding: 10px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.information p {
+    margin: 7px 0;
+}
+
+
+
+
+.color {
+    margin-top: 15px;
+}
+
+.color button {
+    background-color: white;
+
+    padding: 8px 15px;
+
+    margin-right: 5px;
+
+    border: 1px solid #aaa;
+
+    cursor: pointer;
+}
+
+.color button:hover {
+    border-color: #333;
+}
+
+
+
+.buttons {
+    margin-top: 20px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 11px 25px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.cart {
+    background-color: #ddd;
+}
+
+.buy {
+    background-color: #333;
+    color: white;
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+}
+
+.delivery {
+    display: flex;
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+.delivery div {
+    flex: 1;
+
+    background-color: white;
+
+    padding: 18px;
+
+    border: 1px solid #ccc;
+}
+
+.delivery h3 {
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.delivery p {
+    color: #666;
+    font-size: 14px;
+}
+
+.specification {
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 35px;
+
+    border: 1px solid #ccc;
+}
+
+.specification h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+td:first-child {
+    font-weight: bold;
+    background-color: #f5f5f5;
+    width: 35%;
+}
+
+.features {
+    margin-bottom: 40px;
+}
+
+.features h2 {
+    margin-bottom: 20px;
+}
+
+.feature-container {
+    display: flex;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border: 1px solid #ccc;
+}
+
+.feature h3 {
+    margin-top: 0;
+}
+
+.feature p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+footer p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 800px) {
+
+    main {
+        width: 94%;
+    }
+
+    .product {
+        gap: 25px;
+        padding: 22px;
+    }
+
+    .phone-image img {
+        width: 170px;
+        height: 250px;
+    }
+
+    .product-info h1 {
+        font-size: 28px;
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    main {
+        width: 94%;
+        margin-top: 20px;
+    }
+
+
+    
+
+    .product {
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    .phone-image {
+        width: 100%;
+    }
+
+    .phone-image img {
+        width: 160px;
+        height: 220px;
+    }
+
+
+    .product-info h1 {
+        font-size: 26px;
+    }
+
+
+    
+
+    .information {
+        grid-template-columns: 1fr;
+    }
+
+
+    
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+
+
+
+    .delivery {
+        flex-direction: column;
+    }
+
+
+
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+}
+
+</style>
+
+<body>
+
+    <header>
+        <h2>Mobile Store</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Mobiles</a>
+            <a href="#">Offers</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="product">
+
+            <div class="phone-image">
+                <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab"
+                     alt="Samsung Galaxy S24">
+            </div>
+
+
+            <div class="product-info">
+
+                <p class="company">SAMSUNG</p>
+
+                <h1>Samsung Galaxy S24</h1>
+
+                <p class="rating">4.7 / 5 &nbsp; | &nbsp; 1245 Reviews</p>
+
+                <p class="description">
+                    Samsung Galaxy S24 is a modern smartphone with a
+                    bright display, good camera and fast performance.
+                    It is suitable for daily use, entertainment and work.
+                </p>
+
+                <h2 class="price">₹59,999</h2>
+
+                <p class="old-price">₹69,999</p>
+
+                <p class="offer">Special Price</p>
+
+
+                <div class="information">
+
+                    <p><b>Display:</b> 6.2 inch AMOLED</p>
+
+                    <p><b>RAM:</b> 8 GB</p>
+
+                    <p><b>Storage:</b> 256 GB</p>
+
+                    <p><b>Camera:</b> 50 MP</p>
+
+                    <p><b>Battery:</b> 4000 mAh</p>
+
+                    <p><b>Network:</b> 5G</p>
+
+                </div>
+
+
+                <div class="color">
+
+                    <p><b>Select Colour:</b></p>
+
+                    <button>Black</button>
+                    <button>Blue</button>
+                    <button>Silver</button>
+
+                </div>
+
+
+                <div class="buttons">
+
+                    <button class="cart">Add to Cart</button>
+
+                    <button class="buy">Buy Now</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="delivery">
+
+            <div>
+                <h3>Free Delivery</h3>
+                <p>Free delivery available on this product.</p>
+            </div>
+
+            <div>
+                <h3>7 Days Replacement</h3>
+                <p>Easy replacement within seven days.</p>
+            </div>
+
+            <div>
+                <h3>Secure Payment</h3>
+                <p>Multiple secure payment options available.</p>
+            </div>
+
+        </section>
+
+
+        <section class="specification">
+
+            <h2>Product Specifications</h2>
+
+            <table>
+
+                <tr>
+                    <td>Brand</td>
+                    <td>Samsung</td>
+                </tr>
+
+                <tr>
+                    <td>Model</td>
+                    <td>Galaxy S24</td>
+                </tr>
+
+                <tr>
+                    <td>Display</td>
+                    <td>6.2 inch AMOLED</td>
+                </tr>
+
+                <tr>
+                    <td>Processor</td>
+                    <td>Octa Core</td>
+                </tr>
+
+                <tr>
+                    <td>RAM</td>
+                    <td>8 GB</td>
+                </tr>
+
+                <tr>
+                    <td>Storage</td>
+                    <td>256 GB</td>
+                </tr>
+
+                <tr>
+                    <td>Camera</td>
+                    <td>50 MP</td>
+                </tr>
+
+                <tr>
+                    <td>Battery</td>
+                    <td>4000 mAh</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section class="features">
+
+            <h2>Product Features</h2>
+
+            <div class="feature-container">
+
+                <div class="feature">
+
+                    <h3>Display</h3>
+
+                    <p>
+                        The phone comes with a clear AMOLED display
+                        which is suitable for watching videos,
+                        browsing and everyday use.
+                    </p>
+
+                </div>
+</body>
+</html>
+              
